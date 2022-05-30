@@ -1,4 +1,4 @@
-![example workflow](https://github.com/cassiasamp/test_churn_model/actions/workflows/.github/workflows/ci-cd.yaml/badge.svg)
+![github CI/CD](https://github.com/cassiasamp/test_churn_model/actions/workflows/.github/workflows/ci-cd.yaml/badge.svg)
 
 test_churn_model
 ==============================
