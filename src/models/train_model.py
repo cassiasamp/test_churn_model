@@ -73,7 +73,7 @@ def train_and_evaluate(config_path):
 
     with mlflow.start_run(run_name=mlflow_config["run_name"]) as mlops_run:
         model = RandomForestClassifier(max_depth=max_depth,n_estimators=n_estimators)
-        model.fit(train_x, train_y)
+        model.fit(train_x, train_y.values.ravel())
         y_pred = model.predict(test_x)
         accuracy,precision,recall,f1score = accuracymeasures(test_y,y_pred,'weighted')
 
