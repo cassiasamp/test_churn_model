@@ -93,7 +93,7 @@ python-dotenv==0.20.0
 python-fsutil==0.6.1
 python-slugify==6.1.2
 pytz==2022.1
-PyYAML==6.0
+PyYAML>=3.10
 querystring-parser==1.2.4
 requests==2.27.1
 rich==12.4.4
