@@ -2,7 +2,7 @@ import yaml
 import argparse
 import pandas as pd
 from evidently.dashboard import Dashboard
-from evidently.tabs import DataDriftTab,CatTargetDriftTab
+from evidently.dashboard.tabs import DataDriftTab,CatTargetDriftTab
 
 def read_params(config_path):
     """
@@ -28,12 +28,12 @@ def model_monitoring(config_path):
     ref=ref.rename(columns ={target:monitor_target}, inplace = False)
     cur=cur.rename(columns ={target:monitor_target}, inplace = False)
     
-    data_and_target_drift_dashboard = Dashboard(tabs=[DataDriftTab, CatTargetDriftTab])
+    data_and_target_drift_dashboard = Dashboard(tabs=[DataDriftTab(), CatTargetDriftTab()])
     data_and_target_drift_dashboard.calculate(ref,cur, column_mapping = None)
     data_and_target_drift_dashboard.save(monitor_dashboard_path)
 
 if __name__=="__main__":
     args = argparse.ArgumentParser()
-    args.add_argument("--config", default="params.yaml")
+    args.add_argument("--config", default="../../params.yaml")
     parsed_args = args.parse_args()
     model_monitoring(config_path=parsed_args.config)
