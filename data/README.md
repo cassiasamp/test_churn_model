@@ -1,5 +1,6 @@
 Data Dictionary
 ----------------
+The Kaggle challenge is about predicting whether a customer will change telecommunications provider, something known as "churning".
 
 The training dataset contains 4250 samples. 
 
@@ -25,3 +26,5 @@ Each sample contains 19 features and 1 boolean variable "churn" which indicates 
 * "total_intl_charge", numerical. Total charge of international calls
 * "number_customer_service_calls", numerical. Number of calls to customer service
 * "churn", (yes/no). Customer churn - target variable.
+
+[Kaggle competition](https://www.kaggle.com/competitions/customer-churn-prediction-2020/overview)
