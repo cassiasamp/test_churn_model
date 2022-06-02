@@ -13,7 +13,7 @@ template_dir = os.path.join(webapp_root, "templates")
 app = Flask(__name__, static_folder=static_dir,template_folder=template_dir)
 
 class  NotANumber(Exception):
-    def __init__(self, message="Values entered are not Numerical"):
+    def __init__(self, message="Values entered need to be numerical"):
         self.message = message
         super().__init__(self.message)
 
@@ -43,6 +43,8 @@ def form_response(dict_request):
             data = dict_request.values()
             data = [list(map(float, data))]
             response = predict(data)
+            if response == 'yes':
+                response = 'The client is likely to churn.'
             return response
     except NotANumber as e:
         response =  str(e)
@@ -58,7 +60,7 @@ def index():
                 return render_template("index.html", response=response)
         except Exception as e:
             print(e)
-            error = {"error": "Something went wrong!! Try again later!"}
+            error = {"error": "Something went wrong. Try again later."}
             error = {"error": e}
             return render_template("404.html", error=error)
     else:
