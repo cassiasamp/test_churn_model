@@ -44,7 +44,9 @@ def form_response(dict_request):
             data = [list(map(float, data))]
             response = predict(data)
             if response == 'yes':
-                response = 'The client is likely to churn.'
+                response = 'The client is likely to churn'
+            else:
+                response = 'No indication of churning' 
             return response
     except NotANumber as e:
         response =  str(e)
