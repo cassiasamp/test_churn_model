@@ -1,7 +1,7 @@
 from app import form_response 
 
 class  NotANumber(Exception):
-    def __init__(self, message="Values entered are not Numerical"):
+    def __init__(self, message="Values entered need to be numerical"):
         self.message = message
         super().__init__(self.message)
 
