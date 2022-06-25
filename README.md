@@ -1,7 +1,6 @@
 ![github CI](https://github.com/cassiasamp/test_churn_model/actions/workflows/.github/workflows/ci-cd.yaml/badge.svg)
-
-test_churn_model
-==============================
+Testing the use of Mlops with a client's churn model
+====================================================
 
 An end to end ml pipeline with mlops tools based on [Krish Naik's Mlops course](https://www.youtube.com/watch?v=Ly3Dor8HZUA).
 
