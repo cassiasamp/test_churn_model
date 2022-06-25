@@ -1,4 +1,5 @@
 ![github CI](https://github.com/cassiasamp/test_churn_model/actions/workflows/.github/workflows/ci-cd.yaml/badge.svg)
+
 Testing the use of Mlops with a client's churn model
 ====================================================
 
