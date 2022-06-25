@@ -4,6 +4,7 @@ Mlops with a client's churn model
 ====================================================
 
 Testing the use of Mlops with a client's churn model.
+
 This is an end to end machine learning pipeline with Mlops tools based on [Krish Naik's Mlops course](https://www.youtube.com/watch?v=Ly3Dor8HZUA).
 
 Project Organization
