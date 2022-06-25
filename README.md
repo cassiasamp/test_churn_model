@@ -3,7 +3,7 @@
 test_churn_model
 ==============================
 
-end to end ml pipeline with mlops tools
+An end to end ml pipeline with mlops tools based on [Krish Naik's Mlops course](https://www.youtube.com/watch?v=Ly3Dor8HZUA).
 
 Project Organization
 ------------
