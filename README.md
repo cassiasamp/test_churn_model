@@ -3,9 +3,18 @@
 Mlops with a client's churn model
 ====================================================
 
-Testing the use of Mlops with a client's churn model.
-
 This is an end to end machine learning pipeline with Mlops tools based on [Krish Naik's Mlops course](https://www.youtube.com/watch?v=Ly3Dor8HZUA).
+
+It is free, open-source and uses:
+- Cookiecutter: machine learning project template
+- DVC: data versioning and pipeline creation
+- Pytest: basic unit testing
+- MlFlow: model registry
+- Flask: web app to display model results
+- Heroku: model deployment
+- EvidentlyAi: model monitoring
+- Github: code versioning
+- Github Actions: CI-CD pipeline
 
 Project Organization
 ------------
